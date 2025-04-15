@@ -166,7 +166,7 @@
                     <p><strong>Teléfono:</strong> +56 9 9999 9999</p>
                     <p><strong>Correo:</strong> sucursal2@aniquilador.cl</p>
                     <p><strong>Cómo llegar:</strong></p>
-                    <iframe src="https://maps.google.com/maps?...tu-mapa..." class="w-100" height="200"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49028.43843877392!2d-73.26769819228358!3d-39.82319774282416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9615ee891aab33e5%3A0x35c9b4ab79b2d79b!2sValdivia%2C%20Los%20R%C3%ADos!5e0!3m2!1ses-419!2scl!4v1744694998787!5m2!1ses-419!2scl" class="w-100" height="200"></iframe>
 
                   </div>
                 </div>
@@ -180,11 +180,11 @@
                     <img src="imagenes/Local3.jpg" class="img-fluid mb-2">
                   </div>
                   <div class="col-md-6">
-                    <p><strong>Dirección:</strong> Calle inventada 123, Valdivia</p>
+                    <p><strong>Dirección:</strong> Calle inventada 123, San Vicente y las Granadinas</p>
                     <p><strong>Teléfono:</strong> +56 9 0000 0000</p>
                     <p><strong>Correo:</strong> sucursal3@aniquilador.cl</p>
                     <p><strong>Cómo llegar:</strong></p>
-                    <iframe src="https://maps.google.com/maps?...tu-mapa..." class="w-100" height="200"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1862.2900360449937!2d-61.32512636482714!3d12.726067944955002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c477d002039e649%3A0x640dd4edf8ed6f1!2sCayo%20Perico!5e1!3m2!1ses-419!2scl!4v1744695396556!5m2!1ses-419!2scl" class="w-100" height="200"></iframe>
                   </div>
                 </div>
               </div>
@@ -192,20 +192,46 @@
             </div>
           </section>
         </section>
-        
-        <div id="googleMap" style="width:100%;height:400px;"></div>
 
-                  <script>
-                  function myMap() {
-                  var mapProp= {
-                  center:new google.maps.LatLng(51.508742,-0.120850),
-                  zoom:5,
-                  };
-                  var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                  }
-                  </script>
+        <section class="Formularios">
+          <h2>Consultas y reclamos</h2>
 
-                  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+          <form>
+            <div class="mb-3">
+              <label for="ingresonombre" class="form-label">Nombre</label><br>
+              <input type="nombre" class="form-control" id="ingresonombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="ingresoEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="ingresoEmail" required>      
+            </div>
+            <div class="mb-3">
+              <label for="ingresotelefono" class="form-label">Telefono</label>
+              <input type="telefono" class="form-control" id="ingresotelefono" required>
+            </div>
+
+            <!--seleccion-->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" required>
+              <label class="form-check-label" for="radioDefault1">
+                Reclamo
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked required>
+              <label class="form-check-label" for="radioDefault2">
+                Sugerencia
+              </label>
+            </div>
+            
+            <div class="mb-3">
+              <label for="textoCorrespondiente" class="form-label">Escriba aqui</label>
+              <textarea class="form-control" id="textoCorrespondiente" rows="3" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </section>
                   
     </main>
 </body>
