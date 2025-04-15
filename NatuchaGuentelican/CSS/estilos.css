@@ -1,0 +1,94 @@
+body {
+    padding: 40px 20px;
+    background-color: #3e4147;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fffedf; /* color2 */
+}
+  
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #2a2c31; 
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+  
+section {
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+header.encabezado {
+    background-color: #dfba67;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #dfba69; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-bottom: 50px;
+}
+header.encabezado {
+    background: linear-gradient(135deg, #f5deb3, #dfba69); 
+    padding: 40px 0;
+    text-align: center;
+    border: 5px #c4a5a5; 
+    border-radius: 20px;
+    box-shadow:
+    0 4px 10px rgba(0, 0, 0, 0.2),        /* sombra básica abajo */
+    0 0 20px 4px rgba(255, 234, 188, 0.3);
+    margin-bottom: 50px;
+}
+  
+  
+img.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #3d2d0b;
+    object-fit: cover;
+}
+  
+.titulo-header {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: #2a2c31; 
+}
+  
+.Carta,
+.Sobre-la-empresa,
+.Sucursales,
+.Formularios {
+    background-color: #fffedf;
+    color: #2a2c31;
+}
+  
+input,
+textarea {
+    background-color: #ffffff;
+    border: 1px solid #dfba69;
+    color: #2a2c31;
+  }
+  
+input:focus,
+textarea:focus {
+    border-color: #5a2e2e;
+    box-shadow: 0 0 5px rgba(90, 46, 46, 0.5);
+    outline: none;
+}
+  
+button.btn-primary {
+    background-color: #5a2e2e;
+    border-color: #5a2e2e;
+    color: #fffedf;
+}
+  
+button.btn-primary:hover {
+    background-color: #dfba69;
+    color: #2a2c31;
+    border-color: #dfba69;
+}
+  
